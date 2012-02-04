@@ -1,4 +1,12 @@
 Sistemico::Application.routes.draw do
+  
+  devise_for :usuarios
+
+  resources :cidades
+  resources :ufs
+  
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

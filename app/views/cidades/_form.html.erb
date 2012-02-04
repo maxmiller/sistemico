@@ -1,0 +1,44 @@
+<% content_for :javascript_includes do %>
+<script>
+</script>
+<% end %>
+
+<%= form_for(@cidade) do |f| %>
+  <% if @cidade.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cidade.errors.count, "error") %> não foi possível salvar o cadastro da CIDADE: </h2>
+
+      <ul>
+      <% @cidade.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+<div id="cadastro">
+   	<fieldset>
+	  <legend>Cadastro de cidades:</legend>
+	 <div class="cadastro">
+	 <%= f.label :nome %>
+	</div>
+	<div class="cadastro">
+	  <%= f.text_field :nome %>
+	</div>  
+	 <div class="cadastro">
+	 <label >UF</label>
+	</div>
+	<div class="cadastro">
+	<%= f.collection_select(:uf_id, Uf.all, :id,:sigla, :include_blank => true) %>
+	</div>  
+	
+	</fieldset>
+
+</div>
+
+	
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,21 @@
+<h1>Listing unidades</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @unidades.each do |unidade| %>
+  <tr>
+    <td><%= link_to 'Show', unidade %></td>
+    <td><%= link_to 'Edit', edit_unidade_path(unidade) %></td>
+    <td><%= link_to 'Destroy', unidade, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Unidade', new_unidade_path %>

@@ -1,0 +1,21 @@
+<table class='tablesorter'>
+  <tr>
+    <th>Nome</th>
+	<th>Sigla</th>
+	<th></th>
+    <th></th>
+  </tr>
+
+<% @ufs.each do |uf| %>
+  <tr>
+	<td><%= uf.nome %></td>
+    <td><%= uf.sigla %></td>
+	<td><%= link_to '',  edit_uf_path(uf), :class => 'editar' %></td>
+    <td><%= link_to '', uf, :confirm => 'Deseja excluir?', :method => :delete ,:class => 'excluir' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nova UF', new_uf_path ,:class => 'botao' %>

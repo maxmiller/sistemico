@@ -5,10 +5,25 @@ gem 'rails', '3.2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'activerecord-jdbcsqlite3-adapter'
+if defined?(JRUBY_VERSION)
+  gem 'activerecord-jdbc-adapter'
+  gem 'activerecord-jdbcmysql-adapter'
+  gem 'jdbc-mysql'
+  gem 'jruby-openssl'
+  gem 'jruby-rack'
+  gem 'warbler' 
+  gem 'trinidad'
+else
+  gem 'mysql2'
+end
 
-gem 'jruby-openssl'
+gem 'devise'
+gem 'cancan'
+gem 'rolify'
 gem 'json'
+gem 'netzke-core', :git => "git://github.com/skozlov/netzke-core.git"
+gem 'netzke-basepack', :git => "git://github.com/skozlov/netzke-basepack.git"
+gem 'will_paginate'
 
 # Gems used only for assets and not required
 # in production environments by default.

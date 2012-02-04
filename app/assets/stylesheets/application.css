@@ -11,3 +11,49 @@
  *= require_self
  *= require_tree .
 */
+
+
+.cadastro {
+  padding: 2px;
+  display: table;
+}
+.cadastro label{
+	font-size: 11pt;
+}
+.cadastro input{
+  text-transform:none;
+}
+.voltar{
+	background: #666  url("voltar.jpeg") no-repeat;
+	padding:0px;
+	text-decoration: none;
+	text-align:center;	
+	color:#ccc;
+	display:block;
+	width: 50px;
+	height: 17px;
+}
+.excluir{
+	background: #666  url("deletar.jpeg") no-repeat;
+	padding:0px;
+	text-decoration: none;
+	text-align:center;	
+	color:#ccc;
+	display:block;
+	width: 16px;
+	height: 16px;
+}
+.editar{
+	background:#666   url("editar.jpg") no-repeat;
+	padding:0px;
+	text-decoration: none;
+	text-align:center;	
+	color:#ccc;
+	display:block;
+	width: 17px;
+	height: 18px;
+}
+
+.botao{
+	height:28px;
+}

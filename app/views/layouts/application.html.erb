@@ -1,14 +1,54 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>Sistemico</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<title>SISTEMICO</title>
+
+<%= stylesheet_link_tag 'menu' ,'application', 'style', 'jquery-ui-1.8.6', :media => 'all'  %>
+<%= javascript_include_tag 'application', 'jquery-ui', 'jquery-ui-masked', 'jquery.ui.datepicker-pt-BR' %>
+<%= csrf_meta_tag %>
+
+ </head>
 <body>
 
-<%= yield %>
+<div id="header">
+		<div id="logo">
+		
+			<h1><a href="#">Sistema acadêmico de gestão escolar   </a></h1>
+				
+		</div>
+	</div>
+	<!-- end #header -->
+	
+	<!-- end #menu -->
+	<div id="page">
+      <br/><br/><br/><br/><br/>
+
+				 <p style="color: green"><%= flash[:notice] %></p>
+
+                <%= yield  %>
+
+
+			</div>
+
+		<div style="clear: both;">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+		
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	
+	<!-- end #page -->
+	<div id="footer">
+		<div id="b2ti">
+			</div>
+		<p>Copyright (c) 2011 MR Tecnologia. Todos os direitos reservados.</p>
+	</div>
+	<!-- end #footer -->
+
+    </div>
 
 </body>
 </html>

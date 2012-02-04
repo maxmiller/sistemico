@@ -1,0 +1,385 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background:  url("img01.jpg") repeat-x left top;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #464032;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	color: #333333;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2.4em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+}
+
+ul, ol {
+}
+
+a {
+	text-decoration: none;
+	color: #3366ff;
+}
+
+a:hover {
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* Header */
+
+#header {
+	width: 940px;
+	height: 148px;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	height: 90px;
+	margin: 5px;
+/*	background: url("logo.png") no-repeat left top;*/
+	padding-top: 20px;
+	color: #000000;
+}
+
+#logo a{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+}
+#logo h1, #logo p {
+	margin: 0;
+	padding: 0;
+}
+
+#logo h1 {
+	float: left;
+	padding-left: 120px;
+	letter-spacing: -1px;
+	/*text-transform: lowercase;*/
+	font-size: 2.4em;
+}
+
+#logo p {
+	float: left;
+	margin: 0;
+	padding: 26px 0 0 10px;
+	font: normal 14px Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	color: #5E4E38;
+} 
+
+#logo p a {
+	color: #5E4E38;
+}
+
+#logo a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	color: #3366ff;
+}
+
+/* Search */
+
+#search {
+	float: right;
+	width: 280px;
+	height: 60px;
+	padding: 20px 0px 0px 0px;
+	background: #E9E3CB;
+	border-bottom: 4px solid #FFFFFF;
+}
+
+#search form {
+	height: 41px;
+	margin: 0;
+	padding: 10px 0 0 20px;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search-text {
+	width: 170px;
+	padding: 6px 5px 2px 5px;
+	border: none;
+	background: #FFFFFF;
+/*	text-transform: lowercase;*/
+	font: normal 11px Arial, Helvetica, sans-serif;
+	color: #464032;
+}
+
+#search-submit {
+	width: 50px;
+	height: 23px;
+	border: 1px solid #ffffff;
+	background: #ffffff;
+	font-weight: bold;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+/* Menu */
+
+#menu {
+	width: 940px;
+	height: 36px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#menu ul {
+	margin: 0px 0px 0px 10px;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	display: block;
+	height: 26px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	padding: 8px 20px 0px 20px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	border: none;
+}
+#menu li ul {
+     position:absolute;
+     left:-999px;
+     margin:0;
+
+     }
+#menu li ul a             { border:0px; color:#000;} /* tamanho do 1� submenu*/
+#menu li ul ul            {margin: -25px 0 0 95px; width:auto;} /* tamanho do 2� submenu*/
+#menu li:hover ul ul      {left: -999px;}
+#menu li.sfhover ul ul    {left: -999px;}
+#menu li.sfhover ul ul ul {left: -999px;}
+#menu li:hover ul         {left: auto;}
+#menu li li:hover ul      {left: auto;}
+#menu li li li:hover ul   {left: auto;}
+#menu li.sfhover ul       {left: auto;}
+#menu li li.sfhover ul    {left: auto;}
+#menu li li li.sfhover ul {left: auto;}
+
+#menu a:hover, #menu .current_page_item a {
+	background: #cccccc;
+	text-decoration: none;
+	color: #333333;
+}
+
+#menu .current_page_item a {
+	background: #FFFFFF;
+	color: #333333;
+}
+
+/* Page */
+
+#page {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#page-bgtop {
+	padding: 20px ;
+}
+
+#page-bgbtm {
+}
+
+/* Content */
+
+#content {
+	/*float: right;   */
+	width: 800px;
+    height: 400px auto;
+	padding: 10px 0px 0px 0px;
+    
+}
+
+
+
+#footer {
+	width: 900px;
+	height: 50px;
+	margin: 2px auto;
+	padding: 0px 0 15px 0;
+	border-top: 4px solid #EBE6D1;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+#footer p {
+	margin: 0;
+	padding-top: 10px;
+	line-height: normal;
+	font-size: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #444444;
+}
+
+#footer a {
+	color: #464032;
+}
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+.combo{
+    width:170px;
+}
+.combo option{
+	width:160px;
+}
+
+.autocomplete-w1 { background:url(images/shadow.png) no-repeat bottom right; position:absolute; top:4px; left:3px; /* IE6 fix: */ _background:none; _top:1px; }
+.autocomplete-w2 { padding:0 6px 6px 0; }
+.autocomplete { width:300px; border:1px solid #999; background:#FFF; cursor:default; text-align:left; max-height:350px; overflow:auto; margin:-6px 6px 6px -6px; /* IE specific: */ _height:350px;  _margin:0px 6px 6px 0; overflow-x:hidden; }
+.autocomplete .selected { background:#F0F0F0; }
+.autocomplete div { padding:2px 5px; white-space:nowrap; }
+.autocomplete strong { font-weight:normal; color:#3399FF; }
+
+.classselect {width:150px;}
+
+/* tables */
+table.tablesorter {
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 11pt;
+	width: 700px;
+	text-align: left;
+	text-transform: uppercase;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 11pt;
+	padding: 4px;
+}
+table.tablesorter thead tr .header {
+	background-image: url(images/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(images/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(images/desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
+
+.datepicker{
+	width:80px;
+}
+#carregar{
+	background: url(/images/refresh.png) no-repeat center;
+}
+
+select ,input, a,legend{
+	text-transform: uppercase;
+}
+
+legend{
+
+	font-size: 11pt;
+	font-weight: bold;
+}
+fieldset{
+	width:700px;
+}
+

@@ -13,3 +13,15 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+jQuery(function() {
+	$(".cep").mask("99.999-999");
+	$(".cpf").mask("999.999.999-99");
+	$(".telefone").mask("(99)9999.9999");
+	$(".datepicker").datepicker({
+		'option':jQuery.datepicker.regional['pt-BR']  
+	});
+	$(".botao,input:submit,input:button,input:reset").button();
+	$("#paciente_cep").keyup(validarCep);
+	return false;
+});

@@ -1,0 +1,21 @@
+<h1>Listing mantenedoras</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @mantenedoras.each do |mantenedora| %>
+  <tr>
+    <td><%= link_to 'Show', mantenedora %></td>
+    <td><%= link_to 'Edit', edit_mantenedora_path(mantenedora) %></td>
+    <td><%= link_to 'Destroy', mantenedora, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Mantenedora', new_mantenedora_path %>
